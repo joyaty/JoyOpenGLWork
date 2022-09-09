@@ -30,4 +30,6 @@ target_link_libraries(${PROJECT_NAME} ${COMMON_LIBS})
 
 # 添加项目在JoyGLWork文件夹下，便于归类管理
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER JoyGLWork)
-set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
+if(GLFW_BUILD_WIN32)
+   set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup") 
+endif()
