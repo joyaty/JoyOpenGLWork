@@ -10,9 +10,11 @@ include("${CMAKE_SOURCE_DIR}/CMake/CMakeMacro.cmake")
 message(STATUS "BaseGLApp->CMakeList.txt : CMAKE_CURRENT_SOURCE_DIR = ${CMAKE_CURRENT_SOURCE_DIR}")
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Source)
 include_directories(${CMAKE_SOURCE_DIR}/ThirdParts/GLFW/include)
+include_directories(${CMAKE_SOURCE_DIR}/ThirdParts/GLAD/include)
 
 # 所有代码文件
 set(ALL_FILES 
+Source/glad.c
 Source/Main.cpp)
 
 # 添加链接库列表

@@ -1,7 +1,8 @@
 
 
 #include <iostream>
-
+// 注意，需要将GLAD头文件放在GLFW之前，GLAD头文件包含了OpenGL相关头文件的引用，需要在任何依赖OpenGL的库之前引入
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 void framebuffer_size_callback(GLFWwindow*, int, int);
@@ -26,10 +27,19 @@ int main()
 		return -1;
 	}
 	glfwMakeContextCurrent(pWindow);
+	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+	{
+		glfwTerminate();
+		std::cout << "Failed to initialize glad" << std::endl;
+		return -1;
+	}
+	glViewport(0, 0, 1280, 720);
 	glfwSetFramebufferSizeCallback(pWindow, framebuffer_size_callback);
 
 	while (!glfwWindowShouldClose(pWindow))
 	{
+		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
 		glfwSwapBuffers(pWindow);
 		glfwPollEvents();
 	}
@@ -40,5 +50,5 @@ int main()
 
 void framebuffer_size_callback(GLFWwindow* pWindow, int width, int height)
 {
-
+	glViewport(0, 0, width, height);
 }
