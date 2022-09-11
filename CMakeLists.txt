@@ -29,4 +29,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_definitions(-DUNICODE -D_UNICODE)
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/ThirdParts/GLFW)
+add_subdirectory(${PROJECT_SOURCE_DIR}/ThirdParts/GLAD)
+add_subdirectory(${PROJECT_SOURCE_DIR}/ThirdParts/DearIMGui)
 add_subdirectory(${PROJECT_SOURCE_DIR}/OpenGLWork/BaseGLApp)

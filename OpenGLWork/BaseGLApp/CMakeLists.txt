@@ -11,15 +11,25 @@ message(STATUS "BaseGLApp->CMakeList.txt : CMAKE_CURRENT_SOURCE_DIR = ${CMAKE_CU
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Source)
 include_directories(${CMAKE_SOURCE_DIR}/ThirdParts/GLFW/include)
 include_directories(${CMAKE_SOURCE_DIR}/ThirdParts/GLAD/include)
+include_directories(${CMAKE_SOURCE_DIR}/ThirdParts/DearIMGui/Source)
 
 # 所有代码文件
-set(ALL_FILES 
-Source/glad.c
-Source/Main.cpp)
+set(ALL_FILES
+Source/Application/GLFWApplication.cpp
+Source/Application/GLFWApplication.hpp
+Source/GLWork/OpenGLBaseWork.cpp
+Source/GLWork/OpenGLBaseWork.hpp
+Source/DearIMGuiHelper/DearIMGuiBaseHelper.cpp
+Source/DearIMGuiHelper/DearIMGuiBaseHelper.hpp
+Source/Main.cpp
+)
 
 # 添加链接库列表
 set(COMMON_LIBS 
-glfw)
+glfw
+GLAD
+DearIMGui
+)
 
 # 调用外部cmake定义的宏，将源文件按文件加分组
 source_group_by_dir("${ALL_FILES}")
