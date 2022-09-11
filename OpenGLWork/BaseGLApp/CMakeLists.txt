@@ -21,7 +21,7 @@ Source/GLWork/OpenGLBaseWork.cpp
 Source/GLWork/OpenGLBaseWork.hpp
 Source/DearIMGuiHelper/DearIMGuiBaseHelper.cpp
 Source/DearIMGuiHelper/DearIMGuiBaseHelper.hpp
-Source/Main.cpp
+# Source/Main.cpp
 )
 
 # 添加链接库列表
@@ -35,7 +35,7 @@ DearIMGui
 source_group_by_dir("${ALL_FILES}")
 
 # 生成可执行文件 
-add_executable(${PROJECT_NAME} ${ALL_FILES})
+add_library(${PROJECT_NAME} STATIC ${ALL_FILES})
 
 # 添加链接库
 target_link_libraries(${PROJECT_NAME} ${COMMON_LIBS})

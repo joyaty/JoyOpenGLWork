@@ -15,25 +15,3 @@ OpenGLBaseWork::OpenGLBaseWork(int width, int height, std::string name)
     , m_Title(name)
 {
 }
-
-void OpenGLBaseWork::OnInit()
-{
-    
-}
-
-void OpenGLBaseWork::OnUpdate()
-{
-    
-}
-
-void OpenGLBaseWork::OnRender()
-{
-    ImVec4 clearColor = DearIMGuiBaseHelper::GetInstance()->GetColor();
-    glClearColor(clearColor.x, clearColor.y, clearColor.z, clearColor.w);
-    glClear(GL_COLOR_BUFFER_BIT);
-}
-
-void OpenGLBaseWork::OnDestroy()
-{
-    
-}

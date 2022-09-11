@@ -16,10 +16,10 @@ public:
     OpenGLBaseWork(int width, int height, std::string name);
     
 public:
-    virtual void OnInit();
-    virtual void OnUpdate();
-    virtual void OnRender();
-    virtual void OnDestroy();
+    virtual void OnInit() = 0;
+    virtual void OnUpdate() = 0;
+    virtual void OnRender() = 0;
+    virtual void OnDestroy() = 0;
     
 public:
     int GetWidth() const {return m_Width;}
