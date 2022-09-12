@@ -8,7 +8,7 @@
 #ifndef DearIMGuiBaseHelper_hpp
 #define DearIMGuiBaseHelper_hpp
 
-class GLFWwindow;
+struct GLFWwindow;
 
 class DearIMGuiBaseHelper
 {

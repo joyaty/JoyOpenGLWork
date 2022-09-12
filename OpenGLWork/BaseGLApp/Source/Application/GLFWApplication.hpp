@@ -10,7 +10,7 @@
 
 class OpenGLBaseWork;
 class DearIMGuiBaseHelper;
-class GLFWwindow;
+struct GLFWwindow;
 
 class GLFWApplication
 {

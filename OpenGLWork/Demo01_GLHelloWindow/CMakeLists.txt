@@ -34,3 +34,7 @@ target_link_libraries(${PROJECT_NAME} ${COMMON_LIBS})
 
 # 项目设置到JoyGLWork文件下
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER JoyGLWork)
+# WIN32子系统属性设置
+if(GLFW_BUILD_WIN32)
+   set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup") 
+endif()
