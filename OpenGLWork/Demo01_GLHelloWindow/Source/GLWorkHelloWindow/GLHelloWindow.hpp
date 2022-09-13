@@ -1,4 +1,4 @@
-﻿//
+//
 //  GLHelloWindow.hpp
 //  BaseGLApp
 //
@@ -13,14 +13,14 @@
 class GLHelloWindow : public OpenGLBaseWork
 {
 public:
-    GLHelloWindow(int width, int height, std::string name);
-    
+	GLHelloWindow(int width, int height, std::string name);
+
 public:
-    virtual void OnInit() override;
-    virtual void OnUpdate() override;
-    virtual void OnRender() override;
-    virtual void OnDestroy() override;
-    
+	virtual void OnInit() override;
+	virtual void OnUpdate() override;
+	virtual void OnRender() override;
+	virtual void OnDestroy() override;
+
 };
 
 #endif /* GLHelloWindow_hpp */

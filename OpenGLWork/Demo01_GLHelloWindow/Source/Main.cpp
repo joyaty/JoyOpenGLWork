@@ -8,7 +8,8 @@
 #include "GLWorkHelloWindow/GLHelloWindow.hpp"
 #include "GLWorkHelloWindow/IMGuiHelloWindow.hpp"
 
-int main() {
-  GLHelloWindow helloWindow(1280, 720, "GL HelloWindow");
-  return GLFWApplication::Run(&helloWindow, IMGuiHelloWindow::GetInstance());
+int main() 
+{
+	GLHelloWindow helloWindow(1280, 720, "GL HelloWindow");
+	return GLFWApplication::Run(&helloWindow, IMGuiHelloWindow::GetInstance());
 }

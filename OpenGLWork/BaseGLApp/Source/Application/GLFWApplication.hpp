@@ -1,4 +1,4 @@
-﻿//
+//
 //  GLFWApplication.hpp
 //  BaseGLApp
 //
@@ -15,12 +15,12 @@ struct GLFWwindow;
 class GLFWApplication
 {
 public:
-    static int Run(OpenGLBaseWork* pBaseWork, DearIMGuiBaseHelper* pIMGuiHelper);
-    
+	static int Run(OpenGLBaseWork* pBaseWork, DearIMGuiBaseHelper* pIMGuiHelper);
+
 private:
-    // 窗口尺寸变化回调
-    static void OnFrameBufferSizeCallback(GLFWwindow* pWindow, int width, int height);
-    static void OnGLFWErrorCallback(int errorCode, const char* description);
+	// 窗口尺寸变化回调
+	static void OnFrameBufferSizeCallback(GLFWwindow* pWindow, int width, int height);
+	static void OnGLFWErrorCallback(int errorCode, const char* description);
 };
 
 #endif /* GLFWApplication_hpp */

@@ -1,4 +1,4 @@
-﻿//
+//
 //  GLHelloWindow.cpp
 //  BaseGLApp
 //
@@ -11,29 +11,29 @@
 
 
 GLHelloWindow::GLHelloWindow(int width, int height, std::string name)
-    : OpenGLBaseWork(width, height, name)
+	: OpenGLBaseWork(width, height, name)
 {
-    
+
 }
 
 void GLHelloWindow::OnInit()
 {
-    
+
 }
 
 void GLHelloWindow::OnUpdate()
 {
-    
+
 }
 
 void GLHelloWindow::OnRender()
 {
-    ImVec4 clearColor = IMGuiHelloWindow::GetInstance()->GetColor();
-    glClearColor(clearColor.x, clearColor.y, clearColor.z, clearColor.w);
-    glClear(GL_COLOR_BUFFER_BIT);
+	ImVec4 clearColor = IMGuiHelloWindow::GetInstance()->GetColor();
+	glClearColor(clearColor.x, clearColor.y, clearColor.z, clearColor.w);
+	glClear(GL_COLOR_BUFFER_BIT);
 }
 
 void GLHelloWindow::OnDestroy()
 {
-    
+
 }

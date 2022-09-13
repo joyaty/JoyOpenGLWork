@@ -1,4 +1,4 @@
-﻿//
+//
 //  IMGuiHelloWindow.hpp
 //  BaseGLApp
 //
@@ -14,22 +14,22 @@
 class IMGuiHelloWindow : public DearIMGuiBaseHelper
 {
 public:
-    static IMGuiHelloWindow* GetInstance();
-        
+	static IMGuiHelloWindow* GetInstance();
+
 public:
-    float GetFloatValue() const {return m_FloatValue;}
-    ImVec4 GetColor() const {return m_Color;}
-    
+	float GetFloatValue() const { return m_FloatValue; }
+	ImVec4 GetColor() const { return m_Color; }
+
 protected:
-    virtual void OnDrawWindow() override;
+	virtual void OnDrawWindow() override;
 
 private:
-    int m_Counter;
-    float m_FloatValue;
-    ImVec4 m_Color;
-    
+	int m_Counter;
+	float m_FloatValue;
+	ImVec4 m_Color;
+
 private:
-    static IMGuiHelloWindow* s_Instance;
+	static IMGuiHelloWindow* s_Instance;
 };
 
 #endif /* IMGuiHelloWindow_hpp */
