@@ -1,4 +1,4 @@
-//
+﻿//
 //  GLFWApplication.cpp
 //  BaseGLApp
 //
@@ -24,9 +24,6 @@ int GLFWApplication::Run(OpenGLBaseWork *pBaseWork, DearIMGuiBaseHelper *pIMGuiH
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_TRUE);      // require on Mac
     // 创建GLFW窗口
-    int width;
-    int height;
-    const char* title;
     GLFWwindow* pWindow = glfwCreateWindow(pBaseWork->GetWidth(), pBaseWork->GetHeight(), pBaseWork->GetTitle().c_str(), NULL, NULL);
     if(pWindow == nullptr)
     {

@@ -1,4 +1,4 @@
-//
+﻿//
 //  GLFWApplication.hpp
 //  BaseGLApp
 //

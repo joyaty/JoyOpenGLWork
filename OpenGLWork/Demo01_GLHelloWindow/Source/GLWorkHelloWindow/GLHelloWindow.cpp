@@ -1,4 +1,4 @@
-//
+﻿//
 //  GLHelloWindow.cpp
 //  BaseGLApp
 //
