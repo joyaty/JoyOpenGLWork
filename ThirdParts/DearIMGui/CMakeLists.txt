@@ -1,5 +1,5 @@
 # 最小CMake版本需求
-cmake_minimum_required(VERSION 3.4)
+cmake_minimum_required(VERSION 3.10)
 # 项目名称
 project(DearIMGui)
 # 包含CMake自定义宏定义文件

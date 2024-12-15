@@ -1,5 +1,5 @@
 # 最小CMake版本要求
-cmake_minimum_required(VERSION 3.4)
+cmake_minimum_required(VERSION 3.10)
 
 # 项目名
 project(BaseGLApp)
